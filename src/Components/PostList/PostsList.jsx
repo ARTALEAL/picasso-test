@@ -6,7 +6,7 @@ import PostItem from '../PostItem/PostItem';
 const PostsList = () => {
   const [currentPostStart, setCurrentPostStart] = useState(0);
 
-  const { data: posts, isLoading } = postApi.useFetchAllPostsQuery({
+  const { data: posts } = postApi.useFetchAllPostsQuery({
     limit: 10,
     start: currentPostStart,
   });

@@ -1,20 +1,22 @@
 import postApi from '../../utils/api';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import './post.css';
+import history from 'history/browser';
 
 const Post = () => {
   const location = useLocation();
   const query = location.pathname.split('/');
   const id = query[query.length - 1];
 
-  const { data: post, isLoading } = postApi.useFetchPostByIdQuery(id);
+  const { data: post } = postApi.useFetchPostByIdQuery(id);
 
   return post ? (
     <div className="post">
-      <h2>
+      <h2 className="post__title">
         № {post.id} {post.title}
       </h2>
-      <p>{post.body}</p>
+      <p className="post__body">{post.body}</p>
       <Link to={`/posts`}>
         <button className="post-item__button">Назад</button>
       </Link>
@@ -22,9 +24,9 @@ const Post = () => {
   ) : (
     <div className="post">
       <h2>Loading...</h2>
-      <Link to={`/posts`}>
-        <button className="post-item__button">Назад</button>
-      </Link>
+      <button className="post-item__button" onClick={() => history.back()}>
+        Назад
+      </button>
     </div>
   );
 };

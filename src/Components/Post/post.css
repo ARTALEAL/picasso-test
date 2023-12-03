@@ -1,0 +1,17 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: auto;
+  min-height: 90vh;
+}
+
+.post__title {
+  margin-bottom: 15px;
+}
+
+.post__body {
+  margin-bottom: 15px;
+}
