@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dev-finder/picasso-test/static/css/main.5f077a20.css",
+    "main.js": "/dev-finder/picasso-test/static/js/main.fbebdf9a.js",
+    "index.html": "/dev-finder/picasso-test/index.html",
+    "main.5f077a20.css.map": "/dev-finder/picasso-test/static/css/main.5f077a20.css.map",
+    "main.fbebdf9a.js.map": "/dev-finder/picasso-test/static/js/main.fbebdf9a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f077a20.css",
+    "static/js/main.fbebdf9a.js"
+  ]
+}
