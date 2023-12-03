@@ -1,7 +1,7 @@
 {
   "name": "picasso-test",
   "version": "0.1.0",
-  "homepage": "https://artaleal.github.io/dev-finder/picasso-test",
+  "homepage": "https://artaleal.github.io/picasso-test",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
