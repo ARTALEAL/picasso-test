@@ -15,4 +15,4 @@
 
 ### Запуск `npm start`
 
-## [Ссылка на проект](https://artaleal.github.io/dev-finder/picasso-test)
+## [Ссылка на проект](https://artaleal.github.io/picasso-test)
