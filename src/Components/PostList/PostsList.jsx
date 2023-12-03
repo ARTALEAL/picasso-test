@@ -7,7 +7,7 @@ const PostsList = () => {
   const [currentPostStart, setCurrentPostStart] = useState(0);
 
   const { data: posts, isLoading } = postApi.useFetchAllPostsQuery({
-    limit: 7,
+    limit: 10,
     start: currentPostStart,
   });
 
